@@ -8,8 +8,8 @@ const fNames=["Akosua", "Adwoa", "Abenaa", "Akua", "Yaa", "Afua", "Ama"];
 var day = parseInt(document.getElementById('dob').value);
 var mob = parseInt(document.getElementById('mob').value);
 var yob = parseInt(document.getElementById('yob').value);
-const male = document.getElementById('male').value;
-const female = document.getElementById('female').value;
+const gender = document.getElementById('gender').value;
+
 
 var a = Math.floor((14 - mob) / 12);
 var y = yob - a;
@@ -17,6 +17,7 @@ var m = mob + 12 * a - 2;
 
 var date = (day + y + Math.floor(y / 4) - Math.floor(y / 100) 
             + Math.floor(yob / 400) + Math.floor((31 * m) / 12)) % 7;
+
 
 if(day<=0 || day>31){
     alert("You Have Entered an Incorrect Date!")
@@ -37,6 +38,15 @@ if(document.getElementById("dob").value.length==0){
     }
     else if(document.getElementById("yob").value.length==0){
         alert("Enter a Valid Year");
+}
+
+
+
+if(gender=="Male"){
+    document.getElementById("results").innerHTML=("Your Akan Name is "+mNames[date]+". You were born on a "+days[date]);
+}
+else if(gender=="Female"){
+    document.getElementById("results").innerHTML=("Your Akan Name is "+fNames[date]+". You were born on a "+days[date]);
 }
 
 }
