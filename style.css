@@ -2,8 +2,12 @@ body{
     background-image:  url(./assets/749575.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
 }
-
+h1,h2,h3{
+    font-weight: bolder;
+}
 
 .landingpage{
    display: flex;

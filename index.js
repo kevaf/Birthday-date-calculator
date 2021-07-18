@@ -39,6 +39,9 @@ if(document.getElementById("dob").value.length==0){
     else if(document.getElementById("yob").value.length==0){
         alert("Enter a Valid Year");
 }
+    else if(document.getElementById("gender").value==""){
+        alert("Select Your gender")
+    }
 
 
 
