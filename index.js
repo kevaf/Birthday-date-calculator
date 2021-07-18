@@ -43,10 +43,10 @@ if(document.getElementById("dob").value.length==0){
 
 
 if(gender=="Male"){
-    document.getElementById("results").innerHTML=("Your Akan Name is "+mNames[date]+". You were born on a "+days[date]);
+    document.getElementById("results").innerHTML=("Your Akan Name is "+mNames[date]+"♂. You were born on a "+days[date]);
 }
 else if(gender=="Female"){
-    document.getElementById("results").innerHTML=("Your Akan Name is "+fNames[date]+". You were born on a "+days[date]);
+    document.getElementById("results").innerHTML=("Your Akan Name is "+fNames[date]+"♀. You were born on a "+days[date]);
 }
 
 }
