@@ -19,13 +19,24 @@ var date = (day + y + Math.floor(y / 4) - Math.floor(y / 100)
             + Math.floor(yob / 400) + Math.floor((31 * m) / 12)) % 7;
 
 if(day<=0 || day>31){
-    alert("incorrect date")
+    alert("You Have Entered an Incorrect Date!")
+    }
+    
+    else if(mob<=0 || mob>12){
+    alert("Enter a valid month!")
+    }
+    else if(yob<1582 || yob>2020){
+    alert("The Year You Entered is Invalid!")
 }
-else if(mob<=0 || mob>12){
-    alert("Enter a valid month")
+
+if(document.getElementById("dob").value.length==0){
+    alert("Enter a Valid Date");
+    }
+    else if(document.getElementById("mob").value.length==0){
+    alert("Enter a Valid Month");
+    }
+    else if(document.getElementById("yob").value.length==0){
+        alert("Enter a Valid Year");
 }
-
-
-
 
 }
