@@ -30,3 +30,9 @@ h1{
     border-radius: 5%;
     
 }
+
+.jumboclass{
+    display: flex;
+    justify-content: space-evenly;
+    
+}
