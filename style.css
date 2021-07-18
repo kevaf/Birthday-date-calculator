@@ -8,6 +8,9 @@ body{
 h1,h2,h3{
     font-weight: bolder;
 }
+h1{
+    font-size:60px;
+}
 
 .landingpage{
    display: flex;
@@ -39,4 +42,8 @@ h1{
     display: flex;
     justify-content: space-evenly;
     
+}
+#results{
+    color: white;
+    border: 1.5px solid black;
 }
