@@ -18,6 +18,8 @@ h1{
 }
 h1{
     text-align: center;
+    color: blue;
+    text-decoration-line:overline;
 }
 
 .txtlanding{
